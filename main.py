@@ -1,14 +1,8 @@
-from acount_stuff import scraper
+from scraper.x_scraper import scrape_x
 
 def main():
-     tweets = scraper.tweets([
-        ...,  # tweet ids
-    ])
-
-    df = parse_tweets(tweets)
-
-    df.to_csv('tweets.csv')
+    scrape_x('latest_tweet.txt')
     
-
+    
 if __name__ ==  "__main__":
     main()
